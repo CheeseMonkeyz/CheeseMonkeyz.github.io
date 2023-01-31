@@ -8,16 +8,38 @@
 
     <body>
         <!--This is an HTML comment-->
+
+        <!-- 
+            Shift will indent, shift + tab will indent backwards.
+            Ctrl + left/right arrows move to start and end of the line.
+            Ctrl + up/down arrows move to start ot end of page.
+            Shift + ctrl + left/right/up/down arrows select to the start/end of a line.
+            shift + up/down arrows select per line. 
+         -->
+
         <!-- Site Header -->
         <header>
             <!-- h1 is the most important site heading. We can use 6 levels of headings from h1 to h6 -->
             <h1>Reggie's Coffee Shop</h1>
+            <!-- adds links in an unordered list -->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                            <a href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
         </header>
         <!-- Starting the main content of the page -->
         <main>
+            <!-- Adding an on-page link (jumping to section) -->
+            <a href="#treatofweek">Treat of the week</a>
             <!-- Article of the page. Can be used as a stand alone -->
             <article>
                 <h2>Our Story</h2>
+                <!-- adding image -->
+                <img src="./images/coffee-shop.jpg" title="Coffee cup on coffee beans" alt="coffee cup on coffee beans">
                 <p>
                     <q>
                         We're a <em>family owned business</em>. Reggie is the <abbr title="Chief Executive Officer">CEO</abbr> and the head barista of the shop. Maria is the pastry chef.
@@ -53,7 +75,7 @@
                 </ol>
             </section>
             <!-- Adding section for description list -->
-            <section>
+            <section id="treatofweek">
                 <h3>Treat of the week</h3>
                 <dl>
                     <dt>Name</dt>
@@ -75,6 +97,8 @@
                         </ul>
                     </dd>
                 </dl>
+                <!-- Adding an external link -->
+                <a href="https://www.allrecipes.com/recipe/20144/banana-banana-bread/" target="_blank">Banana bread recipe</a>
             </section>
         </main>
         <!-- Site footer -->
