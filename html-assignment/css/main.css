@@ -27,3 +27,22 @@ footer.site-footer {
 .site-title {
     color: brown;
 }
+
+/* adds black border to "selfie.jpg" under "article" element in index.html (calling id="my-image") */
+article #my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+/* styles the hobbies list bullet points to squares */
+aside ul {
+    list-style: square;
+}
+
+/* boldens the first list item */
+aside ul li:first-child {
+    font-weight: bold;
+}
+
+aside ul li:nth-child(odd){
+    background-color:rgb(233, 210, 255);
+}
