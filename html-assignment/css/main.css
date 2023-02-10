@@ -1,0 +1,29 @@
+body {
+    /* changing all text within body to Courier New, and size 18px */
+    font-family:'Courier New', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4 {
+    /* adding bg colour to all headings */
+    background-color: rgb(255, 230, 212);
+}
+
+/* adding bg colour to footers (copyright) */
+footer {
+    background-color: rgb(255, 230, 212);
+}
+body footer {
+    background-color: rgb(255, 230, 212);
+}
+.site-footer {
+    background-color: rgb(255, 230, 212);
+}
+footer.site-footer {
+    background-color: rgb(255, 230, 212);
+}
+
+/* calls the class="site-title" under the h1 header tag in index.html. */
+.site-title {
+    color: brown;
+}
