@@ -43,6 +43,21 @@ aside ul li:first-child {
     font-weight: bold;
 }
 
+/* highlights every odd numbered list item purple */
 aside ul li:nth-child(odd){
     background-color:rgb(233, 210, 255);
+}
+
+/* adds border and background to navigation link as well as removes underline */
+nav a {
+    text-decoration: none;
+    border: 3px solid rgb(187, 217, 228);
+    background-color: rgb(222, 242, 249);
+}
+
+/* adds  */
+nav a:hover,
+nav a:focus {
+    background-color: rgb(172, 208, 222);
+    border: 3px solid rgb(134, 170, 183);
 }
