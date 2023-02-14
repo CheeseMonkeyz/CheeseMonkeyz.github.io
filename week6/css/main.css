@@ -2,6 +2,8 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: cadetblue;
     margin: 20px;
+    /* adding background image, double dot to back out of folder */
+    background-image: url(../images/white_brick_wall.png);
 }
 /* ctrl + / adds a comment. */
 h1 {
@@ -25,11 +27,32 @@ nav ul {
 nav ul a {
     color: darkslategray; 
     text-decoration: none;
+    font-size: 1.5rem;
+    /* 1.5 rem = 1.5 x 16px = 24px */
 }
 
 /* selecting element with ID value */
 #treatofweek {
-    background-color: rgb(242, 220, 220);
+    /* colour, image, repeat, position-x, position-y, */
+    background: rgb(242, 220, 220) url(../images/bread.jpg) no-repeat center;
+
+    /* background-size
+    background-size:500px;
+    */
+
+    /* adds padding and font size to treatofweek list */
+    font-size: 1.25rem;
+    /* 1.25 x 16px = 20px */
+    padding: 1em;
+    /* 1 x 20px = 20px */
+    border: 1.5em solid black;
+
+    /* viewport based unit */
+    /* width: 100vw; */
+    /* scroll wheel because it has space coming from the parent, it goes out of the screen which is not ideal */
+
+    /* height 100vh */
+    /* height is 100% of the browser size and it dynamic */
 }
 
 .blue-link {

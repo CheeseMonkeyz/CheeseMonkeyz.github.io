@@ -29,7 +29,7 @@ footer.site-footer {
 }
 
 /* adds black border to "selfie.jpg" under "article" element in index.html (calling id="my-image") */
-article #my-image {
+#my-image{
     box-shadow: 0 0 2px 1px black;
 }
 
