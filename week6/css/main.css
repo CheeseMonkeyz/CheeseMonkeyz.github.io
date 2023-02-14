@@ -1,6 +1,7 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: cadetblue;
+    margin: 20px;
 }
 /* ctrl + / adds a comment. */
 h1 {
@@ -49,8 +50,16 @@ nav ul a {
     combinators 
     direct child selector - will only select the child of the parent.
 */
+
+/* css typography properties */
+/* changing the "family owned business" quote */
+/* default line height of 1.5 means 1.5 x the font pixel size */
 article>p {
     font-size: 24px;
+    font-weight: 900;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 /* adjacent sibling selector - selects the element that is the very next sibling to the selected element, if any exists. */
