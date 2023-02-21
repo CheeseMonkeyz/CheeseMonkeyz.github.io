@@ -1,0 +1,195 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: cadetblue;
+    margin: 20px;
+    /* adding background image, double dot to back out of folder */
+    background-image: url(../images/white_brick_wall.png);
+}
+/* ctrl + / adds a comment. */
+h1 {
+    color: rgb(135, 88, 88);
+}
+p {
+    background-color: antiquewhite;
+}
+
+/* selecting multiple elements (heading tags) */
+h1, h2, h3, h4 {
+    text-decoration: underline;
+}
+
+/* targets the unordered list (selecting child elements) */
+nav ul {
+    list-style: none;
+}
+
+/* calls the anchor tag in the unordered list, removes the underline under links in list (selecting child element with multiple levels) */
+nav ul a {
+    color: darkslategray; 
+    text-decoration: none;
+    font-size: 1.5rem;
+    /* 1.5 rem = 1.5 x 16px = 24px */
+}
+
+/* selecting element with ID value */
+#treatofweek {
+    /* colour, image, repeat, position-x, position-y, */
+    background: rgb(242, 220, 220) url(../images/bread.jpg) no-repeat center;
+
+    /* background-size
+    background-size:500px;
+    */
+
+    /* adds padding and font size to treatofweek list */
+    font-size: 1.25rem;
+    /* 1.25 x 16px = 20px */
+    padding: 1em;
+    /* 1 x 20px = 20px */
+    border: 1.5em solid black;
+
+    /* viewport based unit */
+    /* width: 100vw; */
+    /* scroll wheel because it has space coming from the parent, it goes out of the screen which is not ideal */
+
+    /* height 100vh */
+    /* height is 100% of the browser size and it dynamic */
+}
+
+.blue-link {
+    background-color: beige;
+    color: rosybrown;
+    text-decoration: none;
+}
+
+.large-text {
+    font-size: 20px;
+}
+
+.white-text {
+    color: antiquewhite;
+}
+
+/* 
+    combinators 
+    direct child selector - will only select the child of the parent.
+*/
+
+/* css typography properties */
+/* changing the "family owned business" quote */
+/* default line height of 1.5 means 1.5 x the font pixel size */
+article>p {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* adjacent sibling selector - selects the element that is the very next sibling to the selected element, if any exists. */
+h3+ul {
+    border: 1px solid black;
+}
+
+h3~p {
+    text-transform: uppercase;
+}
+
+/* Attribute selectors, makes treat of the week link bold */
+[href="#treatofweek"] {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* adds border to image */
+/* 
+[src="./images/coffee-shop.jpg"] { 
+    border: 4px solid darkgrey;
+} 
+*/
+
+/* adds borders to all images */
+[src$=".jpg"] {
+    border: 4px solid darkgrey;
+}
+
+/* psuedo classes, underlines links when hovered over */
+/* styling navigation */
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    background-color: antiquewhite;
+    /* adds horizontal, vertical, blur, spread, and colour */
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+/* underlines page ur currently on */
+nav ul .current,
+
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+}
+
+/* clicking the button */
+nav ul a:active {
+    box-shadow: 0 0 4px 2px black;
+}
+
+/* position selectors, boldening important list item under the merchandise aside */
+/* first and last-child */
+aside ul li:first-child {
+    font-weight: bold;
+}
+
+section ol li:last-child {
+    font-weight: bold;
+}
+
+/* Styling Table */
+table {
+    border-collapse: collapse;
+}
+
+/* nth child selector - even/odd */
+/* hex colour value with 6 characters */
+tbody tr:nth-child(even) {
+    background-color: #f0dbd5;
+}
+
+/* Using nth-child with n */
+/* where n is 0, 1, 2, 3... until number elements. */
+table th:nth-child(n),
+table td:nth-child(n) {
+    border: 1px solid black;
+}
+
+/* using formula in nth-child selector */
+table td:nth-child(2n+1) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* 
+    css specificity 
+    Formula: In-line Style, ID, Class, Tag-name. (0,0,0,0)
+*/
+
+/* (0,0,0,1) */
+footer {
+    background-color: aqua;
+}
+/* (0,0,0,2) */
+body footer {
+    background-color: orange;
+}
+/* (0,0,1,0) */
+.site-footer {
+    background-color: antiquewhite;
+}
+/* (0,0,0,2) */
+article h2 {
+    text-transform: uppercase;
+}
+/* (0,0,1,1) */
+footer.site-footer {
+    background-color: lightgreen;
+}
