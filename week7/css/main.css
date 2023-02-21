@@ -1,10 +1,37 @@
 body{
+    padding-top: 92px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: cadetblue;
     margin: 20px;
     /* adding background image, double dot to back out of folder */
     background-image: url(../images/white_brick_wall.png);
 }
+
+/* Box model example */
+section p {
+    width: 50%;
+    /* 
+        single value includes top/bottom/left/right 
+        2 value = first value, 1st value top/bottom, 2nd value left/right
+    */
+    padding: 1em 0.5em;
+    /* top, right, bottom, left */
+    margin: 1em 2em 2em 2em;
+    border-bottom: 2px solid black;
+}
+
+/* auto adjusting centering of content after 1200px */
+/* always create a container containing everything inside the body tag! */
+.container {
+    max-width: 1200px;
+    /* top/bottom, left/right */
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
 /* ctrl + / adds a comment. */
 h1 {
     color: rgb(135, 88, 88);
@@ -23,8 +50,17 @@ nav ul {
     list-style: none;
 }
 
+/* calling a list item */
+nav ul li {
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
 /* calls the anchor tag in the unordered list, removes the underline under links in list (selecting child element with multiple levels) */
 nav ul a {
+    display: block;
     color: darkslategray; 
     text-decoration: none;
     font-size: 1.5rem;
@@ -36,16 +72,15 @@ nav ul a {
     /* colour, image, repeat, position-x, position-y, */
     background: rgb(242, 220, 220) url(../images/bread.jpg) no-repeat center;
 
-    /* background-size
-    background-size:500px;
-    */
+    /* background-size */
+    background-size:cover;
 
     /* adds padding and font size to treatofweek list */
     font-size: 1.25rem;
     /* 1.25 x 16px = 20px */
     padding: 1em;
     /* 1 x 20px = 20px */
-    border: 1.5em solid black;
+    border: 1em solid black;
 
     /* viewport based unit */
     /* width: 100vw; */
@@ -53,9 +88,26 @@ nav ul a {
 
     /* height 100vh */
     /* height is 100% of the browser size and it dynamic */
+
+    /* positioning banana bread button */
+    position: relative;
 }
 
+/* calling the large text class from blue.link */
+/* 0020 */
+.blue-link.large-text {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+}
+
+/* banana bread recipe */
 .blue-link {
+    /* em = 1.5 x fontsize */
+    padding: 1.5em;
+    width: 300px;
+    display: block;
+
     background-color: beige;
     color: rosybrown;
     text-decoration: none;
@@ -63,6 +115,27 @@ nav ul a {
 
 .large-text {
     font-size: 20px;
+}
+
+/* calling the aside under the article tag */
+article,
+aside {
+    width: 80%;
+    background-color: rgb(167, 240, 215, 0.6);
+    border: 1px solid black;
+    padding: 1.5em;
+    box-sizing: border-box;
+    /* bringing merchandise next to the "our story" aside */
+    float: left;
+}
+
+aside {
+    width: 20%;
+}
+
+/* brings the treatofweek list  */
+section {
+    clear: both;
 }
 
 .white-text {
@@ -110,6 +183,17 @@ h3~p {
 /* adds borders to all images */
 [src$=".jpg"] {
     border: 4px solid darkgrey;
+}
+
+/* Fixed navigation at the top */
+nav {
+    /* fixing position to the top left, and setting the width to 100% */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
 }
 
 /* psuedo classes, underlines links when hovered over */
