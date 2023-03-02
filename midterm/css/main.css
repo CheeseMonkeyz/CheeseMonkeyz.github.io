@@ -41,7 +41,7 @@ nav ul li a {
 h1 {
     position: absolute;
     text-align: center;
-    width: 1030px;
+    width: 1020px;
     top: 240px;
     color: white;
     font-size: 3rem;
@@ -67,7 +67,7 @@ h3, h4 {
     margin-bottom: 10px;
 }
 
-/* Contact + Visit box */
+/* Contact + Visit black box */
 .box {
     border: 1px solid black;
     padding: 1.2em;
@@ -75,7 +75,7 @@ h3, h4 {
 }
 
 /* Contact form */
-textarea {
+.contact textarea {
     outline: none;
     resize: none;
     width: 99%;
@@ -84,11 +84,11 @@ textarea {
 input {
     outline: none;
 }
-form label {
+.contact label {
     display: block;
     font-size: 1.4rem;
 }
-form input {
+.contact input {
     width: 99%;
     margin-bottom: 10px;
     font-size: 1.5rem;
@@ -120,7 +120,5 @@ button:hover {
 /* footer */
 footer {
     /* top, right, bottom, left */
-    margin: 20px 2px 10px 2px;
+    margin: 25px 2px 20px 890px;
 }
-
-/* TO BE STYLED: FOOTER */

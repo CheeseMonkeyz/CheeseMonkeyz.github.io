@@ -44,42 +44,44 @@
                 </aside>
                 <section>
                     <h4>Contact to learn more</h4>
-                    <div class="box">
-                        <form>
-                            <div>
-                                <label for="yourname">Your Name</label>
-                                <input type="text" id="yourname" name="yourname">
+                    <form action="index.html" method="get">
+                        <div class="box">
+                            <div class="contact">
+                                <div>
+                                    <label for="yourname">Your Name</label>
+                                    <input type="text" id="yourname" name="yourname">
+                                </div>
+
+                                <div>
+                                    <label for="youremail">Your Email</label>
+                                    <input type="text" id="youremail" name="youremail"> 
+                                </div>
+
+                                <div>
+                                    <label for="yourmessage">Your Message</label>
+                                    <textarea name="yourmessage" id="yourmessage" cols="141" rows="5"></textarea>
+                                </div>
                             </div>
 
-                            <div>
-                                <label for="youremail">Your Email</label>
-                                <input type="text" id="youremail" name="youremail"> 
+                            <div class="visit">
+                                <h5>Would you like to visit the starfish?</h5>
+                                <label for="yes">Yes</label>
+                                <input type="radio" id="yes" name="past">
+    
+                                <label for="no">No</label>
+                                <input type="radio" id="no" name="past">
+    
+                                <label for="maybe">Maybe</label>
+                                <input type="radio" id="maybe" name="past">
                             </div>
 
-                            <div>
-                                <label for="yourmessage">Your Message</label>
-                                <textarea name="yourmessage" id="yourmessage" cols="141" rows="5"></textarea>
-                            </div>
-                        </form>
-                        
-                        <div class="visit">
-                            <h5>Would you like to visit the starfish?</h5>
-                            <label for="yes">Yes</label>
-                            <input type="radio" id="yes" name="past">
-
-                            <label for="no">No</label>
-                            <input type="radio" id="no" name="past">
-
-                            <label for="maybe">Maybe</label>
-                            <input type="radio" id="maybe" name="past">
+                            <button type="send">SEND</button>
                         </div>
-
-                        <button type="send">SEND</button>
-                    </div>
+                    </form>
                 </section>
             </main>
             <footer>
-                Copyright &copy; Lone Starfish.
+                &copy; Lone Starfish.
             </footer>
         </div>
     </body>
