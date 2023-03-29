@@ -1,0 +1,30 @@
+/* font-family: 'Playfair Display', serif;
+font-family: 'Source Sans Pro', sans-serif; */
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+}
+
+/* font awesome icons */
+h1 i::before {
+    font-size: 3rem;
+    color: cornflowerblue;
+}
+
+.fa-circle-user::before {
+    font-size: 6rem;
+    color: darkblue;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+}

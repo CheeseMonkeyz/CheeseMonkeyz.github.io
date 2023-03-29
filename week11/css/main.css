@@ -1,3 +1,7 @@
+/* ********************************************
+                CUSTOM STYLES
+***********************************************/
+
 /* Global Styles */
 
 html {
@@ -17,7 +21,7 @@ body {
     line-height: inherit;
 }
 
-.clearfix:after {
+.clearfix::after {
     content: '';
     display: table;
     clear: both;
@@ -28,7 +32,7 @@ img {
 }
 
 /* LoVe HAte - Link, Visited, Hover/Focus, Active */
-a, 
+a,
 a:link,
 a:visited {
     color: inherit;
@@ -68,7 +72,7 @@ h5 {
     font-size: 1rem;
 }
 
-/* top-bottom, left-right */
+/* top-bottom left-right */
 p {
     margin: 1em 0;
 }
@@ -95,37 +99,36 @@ p {
 }
 
 .banner h1 {
-    margin: 0 auto;
+    margin: 0;
     padding-top: 250px;
     text-align: center;
     text-transform: uppercase;
 }
 
-    /* Navigation */
-    .nav-list li {
-        border-bottom: 1px solid grey;
-        text-align: center;
-    }
+/* Navigation */
+.nav-list li {
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
 
-    /* loVe HAte */
-    .nav-list a,
-    .nav-list a:link,
-    .nav-list a:visited {
-        display: block;
-        padding: 1em 0;
-        text-decoration: none;
-    }
+/* LoVe HAte */
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+}
 
-    .nav-list a:hover,
-    .nav-list a:focus,
-    /* Classes use a.current instead of a:current */
-    .nav-list a.current {
-        background-color: rgb(127, 170, 255);
-        color: inherit;
-    }
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+    background-color: #00add8;
+    color: inherit;
+}
 
 
-/* Mobile app section */
+/* Mobile App Section */
 
 .btn {
     text-decoration: none;
@@ -137,40 +140,60 @@ p {
 
 .btn:hover,
 .btn:focus {
-    background-color: aqua;
+    background-color: #00add8;
     color: inherit;
 }
 
-/* Action section */
+/* Action Section */
 .actions-list {
     display: flex;
     flex-flow: row wrap;
 }
 
 .actions-list li {
-    /* when doing max/min width for something inside of a container, never use pixels, only percentages. it's using up the percentage of the screen instead of the set number of pixels */
     max-width: 50%;
     padding: 1em;
-    font-size: 1.5rem;
     text-align: center;
+    font-size: 1.5rem;
 }
 
-/* Footer styles */
+/* Footer Styles */
 .site-footer {
     margin-top: 20px;
     padding: 20px 0;
-    border-top: 2px solid aqua;
+    border-top: 2px solid #00add8;
 }
 
 .copy {
     text-align: right;
 }
 
-/* *************************
-         Desktop styles
-************************** */
+/**************************************
+            Climate Page Styles
+***************************************/
+.card {
+    border: 2px solid #00add8;
+    border-radius: 6px;
+    margin-bottom: 1em;
+}
 
-/* at 600px and above, this will happen */
+.card .info {
+    padding: 1em;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.news {
+    border-top: 2px solid #00add8;
+    margin-top: 4em;
+}
+
+
+/**************************************
+            Desktop Styles
+***************************************/
 @media screen and (min-width:600px) {
     html {
         font-size: 16px;
@@ -186,7 +209,7 @@ p {
     }
 
     .banner {
-        background-image: url(../images/smog-desktop.jpg)
+        background-image: url(../images/smog-desktop.jpg);
     }
 
     .banner h1 {
@@ -199,7 +222,7 @@ p {
     }
 
     .nav-list li {
-        flex:1;
+        flex: 1;
         border: none;
         border-right: 1px solid grey;
     }
@@ -208,22 +231,71 @@ p {
         border: none;
     }
 
-    /* Mobile App section */
+    /* Mobile App Section */
     .app img {
         width: 40%;
         float: left;
         margin-right: 1em;
     }
-
     .app .btn {
         float: right;
     }
-
 }
 
-/********************* Media Query 800px ***********************/
+/************************ 
+    MEDIA QUERY 800px
+*************************/
 @media screen and (min-width:800px) {
     .actions-list li {
         max-width: 20%;
     }
+
+    /************************ 
+        CLIMATE PAGE STYLES
+    *************************/
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1em;
+    }
+
+    /* ---------NEWS SECTION--------- */
+    .news {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+            "head head"
+            "left right1"
+            "left right2";
+        gap: 1em;
+    }
+
+    .news h2 {
+        grid-area: head;
+    }
+
+    .news .left {
+        grid-area: left;
+    }
+
+    .news .right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+    }
+
+    .news .right img {
+        grid-row: 1 / 3;
+    }
+
+    .news .right h3 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
+    .news .left h3 {
+        margin-top: 0;
+    }
+
 }
