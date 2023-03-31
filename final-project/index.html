@@ -8,8 +8,6 @@
         <!-- Icon Library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
-    
-<!-- NOTE TO SELF: MATCH HEADING TAGS BY SIZES ON EXAMPLE -->
 
     <body>
         <div class="container">
@@ -75,7 +73,7 @@
 
                 <!-- Services section -->
                 <section id="Services">
-                    <div class="services-box">
+                    <div class="services-container">
 
                         <!-- "Our Services" -->
                         <h2>Our Services</h2>
@@ -151,10 +149,136 @@
                     </div>
                 </section>
 
+                <!-- Our Vision -->
                 <section id="vision">
-                    
+                    <div class="vision-container">
+                        <h3>Our Vision</h3>
+                        <img src="images/vision.jpg" alt="vision-img">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dicta cumque rem quod sit? Doloribus, dolorem? Sapiente, aperiam asperiores nisi ipsa iure laudantium quo! Vel iste possimus distinctio repudiandae sed.</p>
+                    </div>
+
+                    <button><a href="index.html">Learn More <i class="fa-sharp fa-solid fa-play"></i></a></button>
+                </section>
+
+                <!-- Our Team -->
+                <section id="Team">
+                    <div class="team-container">
+
+                        <h3>Our Team</h3>
+
+                        <!-- John img -->
+                        <div class="left">
+                            <img src="images/john.jpg" alt="John-img">
+                        </div>
+
+                        <!-- John text -->
+                        <div class="right">
+                            <h3>John Doe</h3>
+                            <h4>CEO and Co-owner</h4>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur rerum odit sequi exercitationem animi inventore modi, hic accusamus quaerat autem nemo, aspernatur minima accusantium similique atque natus reiciendis dolores.</p>
+                        </div>
+
+                        <!-- Bob img -->
+                        <div class="right">
+                            <img src="images/bob.jpg" alt="Bob-img">
+                        </div>
+
+                        <!-- Bob text -->
+                        <div class="left">
+                            <h3>Bob Rite</h3>
+                            <h4>CFO and Co-Owner</h4>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam aut aspernatur non beatae sapiente, omnis veniam id corporis at architecto ex earum? Consequatur, necessitatibus nam ratione vel magnam reprehenderit impedit?</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact -->
+                <section id="Contact">
+                    <div class="contact-container">
+                        <h3>Contact Us</h3>
+
+                        <!-- Send Us a Message form -->
+                        <div class="message">
+                            <h4>Send Us a Message</h4>
+
+                            <!-- Form -->
+                            <form action="index.html" method="get">
+
+                                <!-- Full Name -->
+                                <div>
+                                    <label for="userfullname">Full Name</label>
+                                    <input type="text" id="userfullname" name="userfullname">
+                                </div>
+
+                                <!-- Email -->
+                                <div>
+                                    <label for="useremail">Email</label>
+                                    <input type="text" id="useremail" name="useremail">
+                                </div>
+
+                                <!-- Message -->
+                                <div>
+                                    <label for="usermessage">Message</label>
+                                    <textarea name="usermessage" id="usermessage" cols="50" rows="7"></textarea>
+                                </div>
+
+                                <!-- Send btn -->
+                                <div class="send-button">
+                                    <button type="send">Send</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="location">
+                            <h4>Location</h4>
+
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944551804454!2d-75.75712548518145!3d45.34993154908314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680223211545!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+                        <!-- Hours of operation -->
+                        <section>
+                            <div class="hours">
+                                <h3>Hours of operation</h3>
+
+                                <!-- Table -->
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">Days</th>
+                                            <th rowspan="2">Hours</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <th>Monday-Friday</th>
+                                            <th>9 AM - 6PM</th>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Saturday-Sunday</th>
+                                            <th>Closed</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
                 </section>
             </main>
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="foot-container">
+                    &copy; Copyright Three Star Media, 2020. 
+                    All images taken from Unsplash.
+                </div>
+            </footer>
         </div>
     </body>
 </html>
