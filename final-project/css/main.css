@@ -27,30 +27,7 @@ h3 {
     line-height: inherit;
 }
 
-/*** Global Nav Bar style ***/
-.banner {
-    background-color: #222222;
-}
 
-.head-bar {
-    display: flex;
-}
-nav {
-    text-align: center;
-}
-nav ul {
-    list-style: none;
-}
-nav ul li {
-    display: inline-block;
-}
-nav ul li a {
-    color: #c78b07;
-    text-decoration: none;
-}
-nav ul a:hover {
-    color: azure;
-}
 
 /************** MOBILE STYLE **************/
 @media screen and (max-width:600px) {
@@ -58,18 +35,35 @@ nav ul a:hover {
 
     /***** Nav Bar *****/
     .banner {
+        background-color: #222222;
         max-width: 600px;
         margin: 0 auto;
+        max-width: 100%;
         padding: 1em;
     }
 
     .head-bar {
         width: 100%;
         flex-direction: column;
+        display: flex;
+    }
+    nav {
+        text-align: center;
+    }
+    nav ul {
+        list-style: none;
     }
     nav ul li {
         margin: 0.5em;
         width: 100%;
+        display: inline-block;
+    }
+    nav ul li a {
+        color: #c78b07;
+        text-decoration: none;
+    }
+    nav ul a:hover {
+        color: azure;
     }
 
     .head-logo {
@@ -108,16 +102,15 @@ nav ul a:hover {
 
 
     /***** Welcome section *****/
+
+    /*** General rules ***/
     /* Note: "position: absolute" places text on img */
     .welcome img {
         width: 100%;
     }
-
-    /*** General rules ***/
     .welcome-text {
         background-color: #22222297;
         margin-top: 2em;
-        margin-bottom: 2em;
         position: absolute;
         width: 97%;
         height: 46%;
@@ -159,6 +152,40 @@ nav ul a:hover {
     }
     .fa-play {
         padding: 5px;
+    }
+
+
+    /***** About section *****/
+    
+    /*** General rules ***/
+    .about-container {
+        background-color: #ffe6ac;
+        padding: 0.8em;
+        max-width: 97%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        color: #222222;
+        position: absolute;
+        max-height: 67%;
+        margin-top: -1.6em;
+    }
+
+    .about-container img {
+        position: relative;
+        width: 100%
+    }
+
+    .about-container h2 {
+        font-size: 3em;
+        position: relative;
+        top: -25px;
+    }
+
+    .about-container p {
+        position: relative;
+        top: -60px;
+        font-size: 0.8em;
     }
 }
 
