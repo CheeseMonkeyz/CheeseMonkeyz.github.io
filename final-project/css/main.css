@@ -1,0 +1,183 @@
+/* Guide: 14 stars = site wide code (global/mobile/desktop), 5 stars = section code, 3 stars = sub section specific code, 1 star = notes  */
+
+/************** GLOBAL STYLES **************/
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+/*** Global Nav Bar style ***/
+.banner {
+    background-color: #222222;
+}
+
+.head-bar {
+    display: flex;
+}
+nav {
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    color: #c78b07;
+    text-decoration: none;
+}
+nav ul a:hover {
+    color: azure;
+}
+
+/************** MOBILE STYLE **************/
+@media screen and (max-width:600px) {
+    /* (At 600px and under, the following will happen) */
+
+    /***** Nav Bar *****/
+    .banner {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 1em;
+    }
+
+    .head-bar {
+        width: 100%;
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 0.5em;
+        width: 100%;
+    }
+
+    .head-logo {
+        width: 100%;
+        background-color: #c78b07;
+    }
+
+    .search-bar {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        
+    }
+
+    .search input{
+        width: 460px;
+        border: 1px solid black;
+        padding: 0.3em;
+    }
+
+    .search-btn button {
+        padding: 3.4px;
+        background-color: #222222;
+        border: 1px solid #c78b07;
+    }
+
+    .search-btn button:hover {
+        background-color: #353535;
+    }
+
+    .fa-magnifying-glass::before {
+        color: #c78b07;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+
+    /***** Welcome section *****/
+    /* Note: "position: absolute" places text on img */
+    .welcome img {
+        width: 100%;
+    }
+
+    /*** General rules ***/
+    .welcome-text {
+        background-color: #22222297;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        position: absolute;
+        width: 97%;
+        height: 46%;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-align: left;
+        padding: 1em;
+    }
+
+    /*** Specific rules for h1, p and button ***/
+    /* Note: every element needs "position: relative" (to connect to the .welcome text position), AND THEN a number of px from the top, otherwise the positioning will not work. */
+    .welcome h1 {
+        font-size: 3.7rem;
+        position: relative;
+        top: -40px;
+    }
+
+    .welcome p {
+        font-size: 0.8rem;
+        width: 85%;
+        position: relative;
+        top: -80px;
+    }
+
+    .welcome button {
+        background-color: #c78b07;
+        border: #222222;
+        padding: 20px;
+        width: 40%;
+        position: relative;
+        top: -70px;
+    }
+    .blue-link2 {
+        color: #222222;
+        position: relative;
+        font-size: 1.3em;
+        text-decoration: none;
+    }
+    .fa-play {
+        padding: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+/************** DESKTOP STYLES **************/
+
+@media screen and (min-width:600px) {
+
+    /* Desktop Nav Bar */
+    .head-bar {
+        flex-direction: row;
+    }
+    nav ul li {
+        width: 100%;
+    }
+}
