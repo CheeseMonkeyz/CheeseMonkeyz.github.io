@@ -1,4 +1,4 @@
-/* Guide: 14 stars = site wide code (global/mobile/desktop), 5 stars = section code, 3 stars = sub section specific code, 1 star = notes  */
+/* Guide: 14 stars = site wide code (global/mobile/desktop), 5 stars = sections, 3 stars = sub section specific code, 1 star = notes  */
 
 /************** GLOBAL STYLES **************/
 
@@ -161,16 +161,15 @@ h3 {
     .about-container {
         background-color: #ffe6ac;
         padding: 0.8em;
-        max-width: 97%;
+        max-width: 100%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         color: #222222;
-        position: absolute;
-        max-height: 67%;
-        margin-top: -1.6em;
+        position: relative;
     }
 
+    /*** Specific rules ***/
     .about-container img {
         position: relative;
         width: 100%
@@ -184,8 +183,68 @@ h3 {
 
     .about-container p {
         position: relative;
-        top: -60px;
         font-size: 0.8em;
+        top: -25px;
+    }
+
+
+    /***** Services section *****/
+
+    /*** General rules ***/
+    .services-container {
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        padding: 1em;
+    }
+
+    .cards {
+        /* (Adds 1 row and 6 columns) */
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .cards img {
+        width: 100%;
+    }
+
+    .card {
+        background-color: #ffe6ac;
+        margin-top: 1em;
+    }
+
+    .info {
+        padding: 10px;
+    }
+
+    .info p {
+        margin-top: -10px;
+        font-size: 0.8em;
+    }
+
+    .card button a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+
+    .card button {
+        padding: 20px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        background-color: #222222;
+        border: #222222;
+    }
+
+    /*** Specific rules ***/
+    .services-container h3 {
+        font-size: 2em;
+        margin-top: 10px;
+    }
+    .services-container h2 {
+        font-size: 3rem;
+        margin-bottom: -10px;
+        margin-top: 10px;
     }
 }
 
