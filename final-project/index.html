@@ -160,45 +160,52 @@
                 <!-- Our Vision -->
                 <section id="vision">
                     <div class="vision-container">
-                        <h3>Our Vision</h3>
-                        <img src="images/vision.jpg" alt="vision-img">
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dicta cumque rem quod sit? Doloribus, dolorem? Sapiente, aperiam asperiores nisi ipsa iure laudantium quo! Vel iste possimus distinctio repudiandae sed.</p>
+                        <div class="vision-text">
+                            <h3>Our Vision</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dicta cumque rem quod sit? Doloribus, dolorem? Sapiente, aperiam asperiores nisi ipsa iure laudantium quo! Vel iste possimus distinctio repudiandae sed.</p>
+                            <button><a href="index.html">Learn More <i class="fa-sharp fa-solid fa-play"></i></a></button>
+                        </div>
+                        <img src="images/vision.jpg" alt="Vision-img">
                     </div>
-
-                    <button><a href="index.html">Learn More <i class="fa-sharp fa-solid fa-play"></i></a></button>
                 </section>
 
                 <!-- Our Team -->
                 <section id="Team">
                     <div class="team-container">
-
                         <h3>Our Team</h3>
 
-                        <!-- John img -->
-                        <div class="left">
-                            <img src="images/john.jpg" alt="John-img">
+                        <div class="john">
+                            <!-- John img -->
+                            <div class="left">
+                                <img src="images/john.jpg" alt="John-img">
+                            </div>
+
+                            <!-- John text -->
+                            <div class="john-text">
+                                <div class="right">
+                                    <h4>John Doe</h4>
+                                    <h5>CEO and Co-owner</h5>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur rerum odit sequi exercitationem animi inventore modi, hic accusamus quaerat autem nemo, aspernatur minima accusantium similique atque natus reiciendis dolores.</p>
+                                </div>
+                            </div>
                         </div>
 
-                        <!-- John text -->
-                        <div class="right">
-                            <h3>John Doe</h3>
-                            <h4>CEO and Co-owner</h4>
-
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur rerum odit sequi exercitationem animi inventore modi, hic accusamus quaerat autem nemo, aspernatur minima accusantium similique atque natus reiciendis dolores.</p>
-                        </div>
-
-                        <!-- Bob img -->
-                        <div class="right">
-                            <img src="images/bob.jpg" alt="Bob-img">
-                        </div>
-
-                        <!-- Bob text -->
-                        <div class="left">
-                            <h3>Bob Rite</h3>
-                            <h4>CFO and Co-Owner</h4>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam aut aspernatur non beatae sapiente, omnis veniam id corporis at architecto ex earum? Consequatur, necessitatibus nam ratione vel magnam reprehenderit impedit?</p>
+                        <div class="bob">
+                            <!-- Bob img -->
+                            <div class="right">
+                                <img src="images/bob.jpg" alt="Bob-img">
+                            </div>
+                            
+                            <!-- Bob text -->
+                            <div class="bob-text">
+                                <div class="left">
+                                    <h4>Bob Rite</h4>
+                                    <h5>CFO and Co-Owner</h5>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam aut aspernatur non beatae sapiente, omnis veniam id corporis at architecto ex earum? Consequatur, necessitatibus nam ratione vel magnam reprehenderit impedit?</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -216,19 +223,19 @@
                             <form action="index.html" method="get">
 
                                 <!-- Full Name -->
-                                <div>
+                                <div class="fullname-container">
                                     <label for="userfullname">Full Name</label>
                                     <input type="text" id="userfullname" name="userfullname">
                                 </div>
 
                                 <!-- Email -->
-                                <div>
+                                <div class="email-container">
                                     <label for="useremail">Email</label>
                                     <input type="text" id="useremail" name="useremail">
                                 </div>
 
                                 <!-- Message -->
-                                <div>
+                                <div class="usermessage-container">
                                     <label for="usermessage">Message</label>
                                     <textarea name="usermessage" id="usermessage" cols="50" rows="7"></textarea>
                                 </div>
@@ -258,8 +265,8 @@
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th colspan="2">Days</th>
-                                            <th rowspan="2">Hours</th>
+                                            <th>Days</th>
+                                            <th>Hours</th>
                                         </tr>
                                     </thead>
 
@@ -283,8 +290,8 @@
             <!-- Footer -->
             <footer class="footer">
                 <div class="foot-container">
-                    &copy; Copyright Three Star Media, 2020. 
-                    All images taken from Unsplash.
+                    <p>&copy; Copyright Three Star Media, 2020.</p>
+                    <p>All images taken from <a href="https://unsplash.com/">Unsplash</a></p>
                 </div>
             </footer>
         </div>
